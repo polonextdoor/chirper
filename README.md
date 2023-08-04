@@ -1,4 +1,4 @@
-# chirper🐦🐤🐦🐧
+# Chirper🐦🐤🐦🐧
 Welcome to Chirper, your very own Twitter-like web application! 
 Chirper allows users to share short messages, follow other users, and stay updated with their latest posts. 
 
