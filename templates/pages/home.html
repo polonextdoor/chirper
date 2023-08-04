@@ -1,9 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-Welcome to Chirper
 
-<div id='tweets'>
+<div class='row text-center'>
+    <div class='col'>
+        <h1>Welcome to Chirper</h1>
+    </div>   
+</div>
+
+<div class='row mb-3'>
+    <div class='col-md4 mx-auto col-10'>
+        <form class='form' method='POST' action='/create-tweet'>
+            {% csrf_token %}
+            <input type='hidden' value='/' name='next' />
+            <textarea class='form-control' name='content' placeholder='Your tweet...'></textarea>
+            <button type='submit' class='btn btn-primary'>Tweet</button>
+        </form>
+    </div>
+</div>
+<div class='row' id='tweets'>
     Loading...
 </div>
 
@@ -27,7 +42,7 @@ function LikeBtn(tweet){
 }
 
 function formatTweetElement(tweet){
-    var formattedTweet = "<div class='mb-4 tweet' id='tweet-" + tweet.id 
+    var formattedTweet = "<div class='col-12 col-md-10 mx-auto border rounded py-3 mb-4 tweet' id='tweet-" + tweet.id 
     + "'><p>" + tweet.content + 
        "</p><div class='btn-group'>" + LikeBtn(tweet) +
         "</div></div>"

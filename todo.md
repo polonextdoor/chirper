@@ -3,6 +3,7 @@
         -> Text
         -> Image -> Media Storage
     -> Delete
+    -> Liking
     -> Retweeting
 2. Users
     -> Register
