@@ -2,8 +2,8 @@
 Welcome to Chirper, your very own Twitter-like web application! 
 Chirper allows users to share short messages, follow other users, and stay updated with their latest posts. 
 
-Features
-Chirper comes with a set of features designed to provide a seamless microblogging experience:
+## Features
+### Chirper comes with a set of features designed to provide a seamless microblogging experience:
 
 Chirps: Users can post short messages, called "Chirps," to share updates, thoughts, and ideas with their followers.
 
